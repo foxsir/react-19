@@ -21,7 +21,7 @@ function MyInput({ ref, ...props }: {ref: RefObject<PP | null>}) {
     };
   }, []);
 
-  return <input {...props} ref={inputRef} />;
+  return <input placeholder={'Please Typing'} {...props} ref={inputRef} />;
 }
 
 export default function ImperativeHandle() {
