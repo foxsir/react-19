@@ -1,0 +1,24 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+ij_java_block_comment_at_first_column = false
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.tsx]
+indent_size = 2
+
+[tests/**/*.java]
+charset = utf-8
+end_of_line = unset
+indent_size = unset
+indent_style = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
