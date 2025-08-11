@@ -6,6 +6,9 @@ import Memo from "@/app/hooks/components/memo";
 import Context from "@/app/hooks/components/context";
 import DeferredValue from "@/app/hooks/components/deferred-value";
 import ImperativeHandle from "@/app/hooks/components/imperative-handle";
+import LayoutEffect from "@/app/hooks/components/layout-effect";
+import Optimistic from "@/app/hooks/components/optimistic";
+import Optimistic2 from "@/app/hooks/components/optimistic2";
 
 export default function Page() {
   return (
@@ -33,6 +36,16 @@ export default function Page() {
       <div className={'grid grid-cols-1 gap-2'}>
         <h1 className={'text-2xl'}>useImperativeHandle</h1>
         <ImperativeHandle />
+      </div>
+      <div className={'grid grid-cols-1 gap-2'}>
+        <h1 className={'text-2xl'}>useLayoutEffect</h1>
+        <LayoutEffect />
+      </div>
+      <div className={'grid grid-cols-1 gap-2'}>
+        <h1 className={'text-2xl'}>useOptimistic</h1>
+        <Optimistic />
+        <hr className={'text-gray-400'}/>
+        <Optimistic2 />
       </div>
     </div>
   );
