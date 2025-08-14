@@ -2,7 +2,7 @@
 
 import {useSyncExternalStore} from 'react';
 import { todosStore } from './todoStore.js';
-import AddButton from "@/app/hooks/components/add-button";
+import AddButton from "@/app/hooks/components/hooks/add-button";
 
 export default function SyncExternalStore() {
   const todos = useSyncExternalStore(todosStore.subscribe, todosStore.getSnapshot, todosStore.getSnapshot);

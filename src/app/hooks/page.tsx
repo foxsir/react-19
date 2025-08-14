@@ -1,17 +1,17 @@
 'use client'
 
-import ActionState from "@/app/hooks/components/action-state";
-import Callback from "@/app/hooks/components/callback";
-import Memo from "@/app/hooks/components/memo";
-import Context from "@/app/hooks/components/context";
-import DeferredValue from "@/app/hooks/components/deferred-value";
-import ImperativeHandle from "@/app/hooks/components/imperative-handle";
-import LayoutEffect from "@/app/hooks/components/layout-effect";
-import Optimistic from "@/app/hooks/components/optimistic";
-import Optimistic2 from "@/app/hooks/components/optimistic2";
-import Reducer from "@/app/hooks/components/reducer";
-import SyncExternalStore from "@/app/hooks/components/sync-external-store";
-import TabContainer from "@/app/hooks/components/transition";
+import ActionState from "@/app/hooks/components/hooks/action-state";
+import Callback from "@/app/hooks/components/hooks/callback";
+import Memo from "@/app/hooks/components/hooks/memo";
+import Context from "@/app/hooks/components/hooks/context";
+import DeferredValue from "@/app/hooks/components/hooks/deferred-value";
+import ImperativeHandle from "@/app/hooks/components/hooks/imperative-handle";
+import LayoutEffect from "@/app/hooks/components/hooks/layout-effect";
+import Optimistic from "@/app/hooks/components/hooks/optimistic";
+import Optimistic2 from "@/app/hooks/components/hooks/optimistic2";
+import Reducer from "@/app/hooks/components/hooks/reducer";
+import SyncExternalStore from "@/app/hooks/components/hooks/sync-external-store";
+import TabContainer from "@/app/hooks/components/hooks/transition";
 
 export default function Page() {
   return (
