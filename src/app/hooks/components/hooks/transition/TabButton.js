@@ -4,13 +4,13 @@ import {Button} from "@heroui/react";
 export default function TabButton({ action, children, isActive }) {
   const [isPending, startTransition] = useTransition();
   if (isActive) {
-    return <b>{children}</b>
+    return <Button>{children}</Button>
   }
   if (isPending) {
-    return <b className="pending">{children}</b>;
+    return <Button variant={'ghost'} color={'warning'} disabled>{children}</Button>
   }
   return (
-    <Button onClick={() => {
+    <Button disabled={isPending} onPress={() => {
       startTransition(async () => {
         await action();
       });
