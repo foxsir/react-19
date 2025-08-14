@@ -9,6 +9,8 @@ import ImperativeHandle from "@/app/hooks/components/imperative-handle";
 import LayoutEffect from "@/app/hooks/components/layout-effect";
 import Optimistic from "@/app/hooks/components/optimistic";
 import Optimistic2 from "@/app/hooks/components/optimistic2";
+import Reducer from "@/app/hooks/components/reducer";
+import SyncExternalStore from "@/app/hooks/components/sync-external-store";
 
 export default function Page() {
   return (
@@ -46,6 +48,14 @@ export default function Page() {
         <Optimistic />
         <hr className={'text-gray-400'}/>
         <Optimistic2 />
+      </div>
+      <div className={'grid grid-cols-1 gap-2'}>
+        <h1 className={'text-2xl'}>useReducer</h1>
+        <Reducer />
+      </div>
+      <div className={'grid grid-cols-1 gap-2'}>
+        <h1 className={'text-2xl'}>useSyncExternalStore</h1>
+        <SyncExternalStore />
       </div>
     </div>
   );
