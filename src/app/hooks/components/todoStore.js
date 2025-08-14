@@ -14,6 +14,7 @@ export const todosStore = {
     emitChange();
   },
   subscribe(listener) {
+    console.dir(listener)
     listeners = [...listeners, listener];
     return () => {
       listeners = listeners.filter(l => l !== listener);

@@ -11,6 +11,7 @@ import Optimistic from "@/app/hooks/components/optimistic";
 import Optimistic2 from "@/app/hooks/components/optimistic2";
 import Reducer from "@/app/hooks/components/reducer";
 import SyncExternalStore from "@/app/hooks/components/sync-external-store";
+import TabContainer from "@/app/hooks/components/transition";
 
 export default function Page() {
   return (
@@ -56,6 +57,10 @@ export default function Page() {
       <div className={'grid grid-cols-1 gap-2'}>
         <h1 className={'text-2xl'}>useSyncExternalStore</h1>
         <SyncExternalStore />
+      </div>
+      <div className={'grid grid-cols-1 gap-2'}>
+        <h1 className={'text-2xl'}>useTransition</h1>
+        <TabContainer />
       </div>
     </div>
   );
